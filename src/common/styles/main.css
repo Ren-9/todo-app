@@ -1,0 +1,132 @@
+body {
+	background-color: hsl(236, 33%, 92%);
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	font-size: 14px;
+	color: rgb(139, 138, 136)
+}
+
+.cover {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+
+	text-align: center;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.main_wrapper {
+	position: absolute;
+	left: 29.5%;
+	top: 60px;
+	padding: 20px 30px 20px 30px;
+	box-shadow: inset;
+}
+
+.title h1 {
+	letter-spacing: 10px;
+	color: white
+}
+
+/* .circle {
+	width: 25px;
+	height: 25px;
+	border: 1px solid rgba(126, 123, 123, 0.473);
+	border-radius: 150px
+} */
+
+.circle {
+	width: 25px;
+	height: 25px;
+	border: 1px solid rgba(126, 123, 123, 0.473);
+	border-radius: 150px
+}
+
+.box-input {
+	background-color: hsl(0, 0%, 98%);
+	border-radius: 7px;
+	padding: 15px 20px 15px 20px;
+}
+
+.box-input input {
+	border: 0px;
+	background-color: transparent;
+	color: rgb(139, 138, 136);
+	width: 100%;
+	font-size: 18px;
+}
+
+.box-item {
+	background-color: hsl(0, 0%, 98%);
+	padding: 15px 20px 15px 20px;
+	border-bottom: 1px solid rgba(175, 171, 171, 0.253);
+}
+
+.box-item div .circle {
+	margin-top: 10px
+}
+
+.box-item p {
+	font-size: 18px;
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.show-data {
+	font-size: 12px;
+	color: rgba(139, 138, 136, 0.788);
+	margin-top: 2px
+}
+
+.box-filter {
+	background-color: hsl(0, 0%, 98%);
+	padding: 15px 20px 0px 20px;
+	border-radius: 0px 0px 13px 13px;
+}
+
+.box-sec-filter {
+	background-color: hsl(0, 0%, 98%);
+	padding: 15px 20px 0px 20px;
+	border-radius: 13px 13px 13px 13px;
+	display: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+
+
+- Very Light Gray: hsl(0, 0%, 98%)
+- Very Light Grayish Blue: hsl(236, 33%, 92%)
+- Light Grayish Blue: hsl(233, 11%, 84%)
+- Dark Grayish Blue: hsl(236, 9%, 61%)
+- Very Dark Grayish Blue: hsl(235, 19%, 35%)
+
+- Very Dark Blue: hsl(235, 21%, 11%)
+- Very Dark Desaturated Blue: hsl(235, 24%, 19%)
+- Light Grayish Blue: hsl(234, 39%, 85%)
+- Light Grayish Blue (hover): hsl(236, 33%, 92%)
+- Dark Grayish Blue: hsl(234, 11%, 52%)
+- Very Dark Grayish Blue: hsl(233, 14%, 35%)
+- Very Dark Grayish Blue: hsl(237, 14%, 26%)
+*/
