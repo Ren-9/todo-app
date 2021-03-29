@@ -10,6 +10,43 @@ p {
 	color: rgb(139, 138, 136)
 }
 
+input {
+	padding: 5px
+}
+
+a {
+	text-decoration: none;
+	color: rgb(139, 138, 136)
+}
+
+button {
+	border: none;
+	background: transparent;
+	color: rgb(139, 138, 136)
+
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.done {
+	text-decoration: line-through;
+	color: rgba(139, 138, 136, 0.616)
+}
+
+.select-box {
+	cursor: "pointer"
+}
+
+
 .cover {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -47,6 +84,16 @@ p {
 .circle {
 	width: 25px;
 	height: 25px;
+	border: 1px solid rgba(126, 123, 123, 0.473);
+	border-radius: 150px
+}
+
+
+.circle-check {
+	width: 25px;
+	height: 25px;
+	margin-top: 10px;
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(201, 148, 233, 1) 100%);
 	border: 1px solid rgba(126, 123, 123, 0.473);
 	border-radius: 150px
 }
@@ -101,17 +148,17 @@ p {
 	display: none;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
+
+.btn-delete {
+	margin-top: 8px;
+	border: none;
+	background-color: transparent;
 }
 
-ul li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.btn-delete i {
+	font-size: 21px;
+	color: rgb(139, 138, 136)
 }
-
 
 /*
 
