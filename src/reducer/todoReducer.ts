@@ -1,9 +1,4 @@
-
-interface Todo {
-	id: number,
-	description: string,
-	done: boolean,
-}
+import { ActionType } from '../common/interfaces/types';
 
 const initialState = [{
 	id: 1,
@@ -11,7 +6,6 @@ const initialState = [{
 	done: false,
 }];
 
-type ActionType = { type: "POST", payload: Todo } | { type: "DELETE", payload: number } | { type: "DONE", payload: number };
 
 
 export const todoReducer = (state: typeof initialState, action: ActionType) => {
@@ -21,7 +15,7 @@ export const todoReducer = (state: typeof initialState, action: ActionType) => {
 			return [...state, action.payload]
 
 		case 'DELETE':
-			return state.filter(x => x.id !== action.payload)
+			return state.filter(todo => todo.id !== action.payload)
 
 		case 'DONE':
 			return state.map(todo => (
@@ -29,7 +23,8 @@ export const todoReducer = (state: typeof initialState, action: ActionType) => {
 				...todo,
 				done: !todo.done
 			} : todo)
-
+		case 'CLEAR-TODOS':
+			return []
 
 		default:
 			return state;
