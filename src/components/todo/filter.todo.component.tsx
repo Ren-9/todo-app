@@ -4,7 +4,7 @@ export const FilterTodo = ({ todos, handleFilter, deleteTodos }: any) => {
 	return (
 		<>
 			<div className="row box-filter ">
-				<div className="col-lg-3 col-7">
+				<div className="col-lg-3 col-6">
 					<p className="show-data">
 						{todos.filter((x: any) => x.done === false).length}{" "}
 						items left
@@ -51,7 +51,7 @@ export const FilterTodo = ({ todos, handleFilter, deleteTodos }: any) => {
 						</div>
 					</div>
 				</div>
-				<div className="col-lg-4 col-5 float-right">
+				<div className="col-lg-4 col-6 float-right">
 					<button onClick={deleteTodos} className="show-data">
 						Clear Completed
 					</button>

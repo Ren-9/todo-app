@@ -72,7 +72,7 @@ export const Home: React.FC = () => {
 				/>
 			</div>
 
-			{todos.length === 1 ? (
+			{todos.length!==0 ? (
 				<FilterTodo
 					todos={todos}
 					handleFilter={handleFilter}
