@@ -1,8 +1,6 @@
-import React from "react";
 import { Home } from "../../pages/home/home.page";
 
-import "../../common/styles/main.css";
-import "../../common/styles/responsive.css";
+
 
 function App() {
 	return (

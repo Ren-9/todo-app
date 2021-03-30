@@ -1,4 +1,4 @@
-import React from "react";
+
 
 export const ItemTodo = ({ todo, handleDelete, handleToggle }: any) => {
 	return (
@@ -47,7 +47,14 @@ export const ItemTodo = ({ todo, handleDelete, handleToggle }: any) => {
 							handleDelete(todo.id);
 						}}
 					>
-						<i className="fa fa-trash"></i>
+						<img
+							width="15"
+							alt=""
+							src={
+								process.env.PUBLIC_URL +
+								"/assets/images/icon-cross.svg"
+							}
+						/>
 					</button>
 				</div>
 			</div>
